@@ -1,0 +1,14 @@
+{
+  "name": "roltodamage",
+  "version": "1.0.0",
+  "description": "Game about probabilities",
+  "author": "@baturinsky",
+  "scripts": {
+    "start": "esbuild src/prog.ts --target=es2016 --outfile=distr/bundle.js --watch",
+    "build": "esbuild src/prog.ts --target=es2016 --outfile=distr/minified.js --minify && regpack distr/minified.js > distr/packed.js"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+  }
+}
